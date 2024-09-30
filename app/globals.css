@@ -76,3 +76,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.center-center {
+  max-width: max-content;
+  margin-inline: auto;
+}

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/ModeToggle";
+import Footer from "./components/Footer";
+import { sub } from "date-fns";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,6 +16,11 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,12 +35,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <header className="flex justify-center p-1 bg-background text-foreground">
             <ModeToggle />
           </header>
-          {children}
+          <main className={`${lexend.className}`}>{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
