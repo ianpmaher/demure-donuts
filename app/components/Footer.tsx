@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { AvatarIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
-export default function Footer() {
+export default function Footer({className}: {className?: string}) {
   return (
-    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+    <footer className={`${className} row-start-3 flex gap-6 flex-wrap items-center justify-center`}>
         <Link
           href="https://github.com/ianpmaher/"
           rel="noopener noreferrer"
