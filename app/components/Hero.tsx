@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
 
-const Hero = () => {
+const Hero = ({className}: {className?: string}) => {
   const images = [
     { url: "https://i.imgur.com/jYCZgWh.png", description: "Blueberry Swirl" },
     { url: "https://i.imgur.com/dkOnEcG.png", description: "Choco Latte" },
@@ -11,7 +11,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="hero">
+    <div className={`${className} center-center`}>
       <Carousel className="w-full max-w-xs">
         <CarouselContent>
           {images.map((_, index) => (

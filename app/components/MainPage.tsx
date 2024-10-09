@@ -1,13 +1,11 @@
-import { Separator } from "@/components/ui/separator";
+import Hero from "./Hero";
+import MenuTest from "./MenuTest";
 
-const MainPage = () => {
+const MainPage = ({ className }: { className?: string }) => {
   return (
-    <div className="text-center">
-      <h1>Main Page</h1>
-      <p>This is the main page</p>
-      <div className="w-[50vw]">
-        <Separator />
-      </div>
+    <div className={`${className} text-center flex flex-col justify-center items-center gap-20`}>
+      <Hero className="flex-1" />
+      <MenuTest className="flex-1" />
     </div>
   );
 };

@@ -41,7 +41,7 @@ export default function RootLayout({
             <header className="flex justify-center p-1 bg-background text-foreground fixed top-0 my-1">
               <ModeToggle />
             </header>
-            <main className="">
+            <main className="w-screen">
               {children}
             </main>
           </div>
