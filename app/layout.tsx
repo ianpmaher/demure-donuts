@@ -38,10 +38,10 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className={`${lexend.className} min-h-screen flex justify-center items-center flex-col`}>
-            <header className="flex justify-center p-1 bg-background text-foreground fixed top-0 my-1">
-              <ModeToggle />
+            <header className="flex justify-center p-1 bg-background text-foreground relative top-0 my-1">
+              <ModeToggle className="absolute" />
             </header>
-            <main className="w-screen p-4 my-12">
+            <main className="w- p-4 my-12">
               {children}
             </main>
           </div>
