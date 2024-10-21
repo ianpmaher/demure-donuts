@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
 const MenuTest = ({ className }: { className?: string }) => {
@@ -28,8 +29,6 @@ const MenuTest = ({ className }: { className?: string }) => {
 
   return (
     <div className={`${className} text-center`}>
-      <h1>Menu Test</h1>
-      <p>This is the menu test page</p>
       <div className="text-center">
         <Accordion type="multiple">
           {images.map((image, index) => (
@@ -45,6 +44,7 @@ const MenuTest = ({ className }: { className?: string }) => {
                 <p className="text-md inline w-1/3 text-pretty">{image.description}</p>
                 <div className="mx-4 font-bold">{image.price}</div>
               </AccordionContent>
+              <Separator />
             </AccordionItem>
           ))}
         </Accordion>
