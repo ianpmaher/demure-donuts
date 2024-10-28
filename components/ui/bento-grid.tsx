@@ -30,7 +30,7 @@ const BentoCard = ({
     className={cn(
       "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
       // light styles
-      "bg-slate-200 hover:outline hover:outline-slate-400 transition-all duration-300 ease-in-out",
+      "bg-slate-400 hover:outline hover:outline-slate-400 transition-all duration-300 ease-in-out",
       // dark styles
       "transform-gpu dark:bg-black shadow-lg",
       className
@@ -45,7 +45,7 @@ const BentoCard = ({
 
     <div
       className={cn(
-        "pointer-events-none absolute bottom-0 flex w-full translate-y-20 transform-gpu flex-row items-center p-3 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 bg-slate-600 bg-opacity-70"
+        "pointer-events-none absolute bottom-0 flex w-full translate-y-20 transform-gpu flex-row items-center p-3 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 bg-opacity-70"
       )}
     >
       <Button variant="ghost" asChild size="sm" className="pointer-events-auto">

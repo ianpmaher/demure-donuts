@@ -6,6 +6,8 @@ import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/ModeToggle";
 import Footer from "./components/Footer";
 import { sub } from "date-fns";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,8 +40,8 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className={`${lexend.className} min-h-screen flex justify-center items-center flex-col`}>
-            <header className="flex justify-center p-1 bg-background text-foreground relative top-0 my-1">
-              <ModeToggle className="absolute" />
+            <header className="bg-background fixed top-0">
+              <Header />
             </header>
             <main className="w- p-4 my-12">
               {children}

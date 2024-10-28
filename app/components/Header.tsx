@@ -1,12 +1,13 @@
+import { ModeToggle } from "./ModeToggle";
 import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <header>
-      <h1>Header</h1>
+    <header className="flex justify-around">
       <Nav />
+      <ModeToggle className="" />
     </header>
   );
-}
+};
 
 export default Header;
