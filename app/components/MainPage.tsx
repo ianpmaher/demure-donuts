@@ -6,10 +6,10 @@ import { DoubleArrowUpIcon, CubeIcon, ChatBubbleIcon, CookieIcon } from "@radix-
 
 const MainPage = ({ className }: { className?: string }) => {
   const images = [
-    { url: "https://i.imgur.com/jYCZgWh.png", description: "Blueberry Swirl", name: "Menu", Icon: CubeIcon, href: "/", cta: "Menu", classes: "col-span-1" },
-    { url: "https://i.imgur.com/dkOnEcG.png", description: "Choco Latte", name: "Hero", Icon: ChatBubbleIcon, href: "/", cta: "Hero", classes: "col-span-2" },
-    { url: "https://i.imgur.com/ehqYwDy.png", description: "Birthday Cake", name: "Birthday", Icon: CookieIcon, href: "/", cta: "Birthday", classes: "col-span-2" },
-    { url: "https://i.imgur.com/4cPsfTF.png", description: "Breakfast Special", name: "Breakfast", Icon: DoubleArrowUpIcon, href: "/", cta: "Breakfast", classes: "col-span-1" },
+    { url: "https://i.imgur.com/jYCZgWh.png", description: "", name: "Blueberry Swirl", Icon: CubeIcon, href: "/", cta: "Menu", classes: "col-span-1" },
+    { url: "https://i.imgur.com/dkOnEcG.png", description: "", name: "Choco Latte", Icon: ChatBubbleIcon, href: "/", cta: "Hero", classes: "col-span-2" },
+    { url: "https://i.imgur.com/ehqYwDy.png", description: "", name: "Birthday Cake", Icon: CookieIcon, href: "/", cta: "Birthday", classes: "col-span-2" },
+    { url: "https://i.imgur.com/4cPsfTF.png", description: "", name: "Breakfast Special", Icon: DoubleArrowUpIcon, href: "/", cta: "Breakfast", classes: "col-span-1" },
   ];
 
   return (
@@ -19,8 +19,8 @@ const MainPage = ({ className }: { className?: string }) => {
           <BentoCard
             key={index}
             name={image.name}
-            className={`place-content-center flex ${image.classes}`}
-            background={<Image src={image.url} alt={image.description} width={300} height={300} className="p-1 rounded-md" />}
+            className={`place-content-center flex p-1 ${image.classes}`}
+            background={<Image src={image.url} alt={image.name} width={300} height={300} className="p-1 rounded-2xl flex justify-self-center scale-110" />}
             Icon={image.Icon}
             description={image.description}
             href={image.href}
