@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+			backgroundImage: {
+				'donut-bg': "url('https://images.unsplash.com/photo-1464347477106-7648bc26261b')",
+			},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

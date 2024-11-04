@@ -15,6 +15,11 @@ const Nav = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">
+            home
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/menu">
             menu
           </NavigationMenuLink>
