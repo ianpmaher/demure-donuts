@@ -1,6 +1,5 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import Hero from "./Hero";
-import MenuTest from "./MenuTest";
 import Image from "next/image";
 import { DoubleArrowUpIcon, CubeIcon, ChatBubbleIcon, CookieIcon } from "@radix-ui/react-icons";
 

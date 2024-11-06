@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import MainPage from "./components/MainPage";
 import MenuTest from "./components/MenuTest";
+import CommentModal from "./components/CommentModal";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <MainPage className="max-w-screen" />
       <Separator className="my-4" />
       <MenuTest className="" />
+      <CommentModal />
     </main>
   );
 }
