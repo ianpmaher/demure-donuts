@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import CommentModal from "@/app/components/CommentModal";
 
 const BentoGrid = ({ children, className }: { children: ReactNode; className?: string }) => {
   return <div className={cn("grid w-full auto-rows-[25rem] auto-cols-auto grid-cols-3 gap-4", className)}>{children}</div>;
@@ -16,14 +17,16 @@ const BentoCard = ({
   description,
   href,
   cta,
+  func,
 }: {
   name: string;
   className: string;
   background: ReactNode;
   Icon: any;
   description: string;
-  href: string;
+  href?: string;
   cta: string;
+  func?: any;
 }) => (
   <div
     key={name}
@@ -51,6 +54,7 @@ const BentoCard = ({
       <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
         <a href={href}>
           {cta}
+            {func && func()}
           <ArrowRightIcon className="ml-2 h-4 w-4" />
         </a>
       </Button>

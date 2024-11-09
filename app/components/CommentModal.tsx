@@ -47,15 +47,15 @@ export function CommentModal() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">View Reviews</Button>
+        <Button variant="outline">View</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>View Reviews</DialogTitle>
+          <DialogTitle classname="text-center">Reviews</DialogTitle>
           <DialogDescription>a</DialogDescription>
         </DialogHeader>
         <DialogFooter>
-          <Button type="submit">Save changes</Button>
+          <Button type="submit">Order Now!</Button>
         </DialogFooter>
         <div>
           {loading ? (
