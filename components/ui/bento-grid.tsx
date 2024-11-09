@@ -51,7 +51,7 @@ const BentoCard = ({
         "pointer-events-none absolute bottom-0 flex w-full translate-y-20 transform-gpu flex-row items-center p-3 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 bg-opacity-70"
       )}
     >
-      <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
+      <Button variant="ghost" asChild size="sm" className="pointer-events-auto text-lg">
         <a href={href}>
           {cta}
             {func && func()}

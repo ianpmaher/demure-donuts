@@ -7,9 +7,9 @@ import CommentModal from "./CommentModal";
 const MainPage = ({ className }: { className?: string }) => {
   const images = [
     { url: "https://i.imgur.com/jYCZgWh.png", description: "", name: "Blueberry Swirl", Icon: CubeIcon, href: "/", cta: "🫐", classes: "col-span-1" },
-    { url: "https://i.imgur.com/dkOnEcG.png", description: "", name: "Choco Latte", Icon: ChatBubbleIcon, href: "/", cta: "Hero", classes: "col-span-2" },
-    { url: "https://i.imgur.com/ehqYwDy.png", description: "", name: "Birthday Cake", Icon: CookieIcon, href: "/", cta: "Birthday", classes: "col-span-2" },
-    { url: "https://i.imgur.com/4cPsfTF.png", description: "", name: "Breakfast Special", Icon: DoubleArrowUpIcon, href: "/", cta: "Breakfast", classes: "col-span-1" },
+    { url: "https://i.imgur.com/dkOnEcG.png", description: "", name: "Choco Latte", Icon: ChatBubbleIcon, href: "/", cta: "🍩", classes: "col-span-2" },
+    { url: "https://i.imgur.com/ehqYwDy.png", description: "", name: "Birthday Cake", Icon: CookieIcon, href: "/", cta: "🎂", classes: "col-span-2" },
+    { url: "https://i.imgur.com/4cPsfTF.png", description: "", name: "Breakfast Special", Icon: DoubleArrowUpIcon, href: "/", cta: "☕", classes: "col-span-1" },
   ];
 
   return (
