@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import CommentModal from "@/app/components/CommentModal";
 
 const BentoGrid = ({ children, className }: { children: ReactNode; className?: string }) => {
-  return <div className={cn("grid w-full auto-rows-[25rem] auto-cols-auto grid-cols-3 gap-4", className)}>{children}</div>;
+  return <div className={cn("grid w-full auto-rows-[25rem] auto-cols-auto grid-cols-4 gap-3", className)}>{children}</div>;
 };
 
 const BentoCard = ({
