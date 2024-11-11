@@ -10,6 +10,8 @@ const MainPage = ({ className }: { className?: string }) => {
     { url: "https://i.imgur.com/dkOnEcG.png", description: "", name: "Choco Latte", Icon: ChatBubbleIcon, href: "/", cta: "🍩", classes: "col-span-2" },
     { url: "https://i.imgur.com/ehqYwDy.png", description: "", name: "Birthday Cake", Icon: CookieIcon, href: "/", cta: "🎂", classes: "col-span-2" },
     { url: "https://i.imgur.com/4cPsfTF.png", description: "", name: "Breakfast Special", Icon: DoubleArrowUpIcon, href: "/", cta: "☕", classes: "col-span-1" },
+    { url: "https://i.imgur.com/qOsjHIf.jpeg", description: "", name: "The One Ring", Icon: CookieIcon, href: "/", cta: "⚔️", classes: "col-span-1" },
+    { url: "https://i.imgur.com/jSuJvfb.jpeg", description: "", name: "Doggo Donut", Icon: DoubleArrowUpIcon, href: "/", cta: "🐶", classes: "col-span-1" },
   ];
 
   return (
