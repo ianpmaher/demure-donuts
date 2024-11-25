@@ -12,8 +12,8 @@ import {
 
 const Nav = () => {
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
+    <NavigationMenu className="">
+      <NavigationMenuList className="">
         <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">
             home
@@ -25,8 +25,8 @@ const Nav = () => {
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/services">
-            services
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/cater">
+            cater
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
