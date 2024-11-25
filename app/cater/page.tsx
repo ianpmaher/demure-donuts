@@ -1,3 +1,5 @@
+import CaterMenu from "./CaterMenu";
+
 export default function CaterPage() {
   return (
     <div className="max-w-md mx-auto p-6 bg-primary-foreground rounded-lg shadow-md">
@@ -38,6 +40,7 @@ export default function CaterPage() {
           placeholder="Menu"
           className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+        <CaterMenu />
         <button
           type="submit"
           className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
